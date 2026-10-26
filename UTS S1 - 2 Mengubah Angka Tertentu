@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int i;
+int n;
+int r;
+int hasil = 1;
+int hasil_asli;
+
+void main() {
+
+    for ( i = 1; i <= 50; i++)
+
+    if ( i == 15) {
+        printf("TRE\n", i);
+    } else if ( i == 30) {
+        printf("TRE\n", i);
+    } else if ( i == 45 ) {
+        printf("TRE\n", i);
+    } else if ( i %3 == 0) {
+        printf("TR\n", i);
+    } else if ( i %5  == 0) {
+        printf("Elektronika\n", i);
+    } else {
+        printf("%d\n", i);
+    } 
+
+}
