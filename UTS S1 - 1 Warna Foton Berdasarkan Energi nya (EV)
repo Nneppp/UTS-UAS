@@ -6,8 +6,11 @@ void main() {
 
             printf("masukan nilai energi foton : "); // UTS No 1.
             scanf("%f", &ef);
-            
-            if (ef >= 2.75 && ef <= 3.26) {
+
+            if (ef >= 3.26) {
+            printf("warna tidak terdefinisi karena energi foton (EV): %.2f terlalu besar", ef);
+            }
+            else if (ef >= 2.75 && ef <= 3.26) {
                 printf("warna dari energi foton (EV): %.2f adalah ungu", ef);
             }
             else if (ef >= 2.5 && ef <= 2.75) {
