@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+float ef; // besar energi foton (EV) 
+
+void main() {
+
+            printf("masukan nilai energi foton : "); // UTS No 1.
+            scanf("%f", &ef);
+            
+            if (ef >= 2.75 && ef <= 3.26) {
+                printf("warna dari energi foton (EV): %.2f adalah ungu", ef);
+            }
+            else if (ef >= 2.5 && ef <= 2.75) {
+                printf("warna dari energi foton (EV): %.2f adalah biru", ef);
+            } 
+            else if (ef >= 2.17 && ef <= 2.25){
+                printf("warna dari energi foton (EV): %.2f adalah hijau", ef);
+            }
+            else if (ef >= 2.10 && ef <= 2.17){
+                printf("warna dari energi foton (EV): %.2f adalah kuning", ef);
+            }
+            else if (ef >= 2.00 && ef <= 2.10){
+                printf("warna dari energi foton (EV): %.2f adalah jingga", ef);
+            }
+            else if (ef >= 1.62 && ef <= 2.00){
+                printf("warna dari energi foton (EV): %.2f adalah merah", ef);
+            }
+            else if (ef <= 1.62){
+                printf("warna dari energi foton (EV): %.2f tidak terdefinisi", ef);
+            }
+        }
